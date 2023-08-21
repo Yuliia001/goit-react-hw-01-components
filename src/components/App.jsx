@@ -1,3 +1,4 @@
+import { GlobalStyle } from "./GlobalStyle";
 import { Profile } from "./profileUser/Profile";
 import { Statistics } from "./statistics/Statistics";
 import { FriendList } from "./friendList/FriendList";
@@ -6,12 +7,13 @@ import user from '../dataUser/user.json';
 import data from '../dataUser/data.json';
 import friends from '../dataUser/friends.json';
 import transactions from '../dataUser/transactions.json';
+import { Layout } from "./Layout.styled";
 
 
 
 export const App = () => {
   return (
-    <div>
+    <Layout>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -22,7 +24,8 @@ export const App = () => {
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-    </div>
+      <GlobalStyle/>
+    </Layout>
   );
 };
 
