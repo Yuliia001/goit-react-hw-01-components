@@ -5,7 +5,8 @@ import { StatisticsItem } from "./StatisticsItem";
 export const Statistics = ({ title, stats}) => { 
     return (
       <StatWrapper>
-        <Title>{title}</Title>
+       
+        {title &&  <Title>{title}</Title>}
         
         <StartList>
           {stats.map(stat => (
