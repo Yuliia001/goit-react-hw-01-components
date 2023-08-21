@@ -1,6 +1,6 @@
 import { Avatar, Item, Name, Status } from "./FriendsItem.styled";
 
-export const FriendsItem = ({ friends: { avatar, name, isOnline } }) => {
+export const FriendsItem = ({ friend: { avatar, name, isOnline } }) => {
     return (
         <Item>
             <Status online={isOnline}></Status>

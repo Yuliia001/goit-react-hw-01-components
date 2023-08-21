@@ -7,5 +7,5 @@ export const TrLinie = styled.tr`
 }
 `;
 export const TableData = styled.td`
-    border: 1px solid #878585;;
+    border: 1px solid #878585;
 `;
