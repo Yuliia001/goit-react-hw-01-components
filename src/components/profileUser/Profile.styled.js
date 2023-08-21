@@ -4,7 +4,8 @@ export const ProfileUser = styled.div`
   width: 300px;
   border: 1px solid #111111;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 5px 5px 34px 5px rgba(0,0,0,0.8); 
+  box-shadow: 5px 5px 34px 5px rgba(0,0,0,0.8);
   background-color: #F7FBFE;
   margin: 0 auto;
   `;
